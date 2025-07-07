@@ -24,7 +24,7 @@ if "%processFor%"=="1" (
     echo 1. ITC
     echo 2. TATA
     echo 3. ALL
-    set /p processFor2="Enter yoeeeur choice (1-3): "
+    set /p processFor2="Enter your choice (1-3): "
 ) else (
     set processFor2=3
 )
