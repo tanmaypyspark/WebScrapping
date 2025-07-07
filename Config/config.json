@@ -1,0 +1,94 @@
+{
+    "UserInput" : "Config\\config.conf",
+    "output_path": "Output\\WebData\\",
+    "Stagging_path": "Output\\Stagging\\",
+    "analysis_path": "Output\\Analysis\\",
+    "settings" : {
+        "DRIVER": 30,
+        "SCROLL_PAUSE_TIME": 5,
+        "MAX_SCROLLS_OR_NEXT_PAGE": 2,
+        "CHROME_OPTIONS": "--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "DRIVER_LOCATION": "444556454c4f504544206279203a2054414e414d59204d414e44414c"
+    },
+    "options" :{
+        "1": {
+            "1": "ITC Kohenur",
+            "2": "ITC Sonar",
+            "3": "ALL"
+        },
+        "2": {
+            "1": "ITC",
+            "2": "TATA",
+            "3": "ALL"
+        }
+    },
+    "category_map": {
+        "1": "Hotels",
+        "2": "Stocks",
+        "3": "ALL"
+    },
+    "Stocks":{
+        "MoneyControl":{
+            "Class": {
+                "element_selector" : "postItem_text_paragraph__3XhZQ",
+                "ts_selector" : "postItem_price1__3ojct",
+                "author_selector" : "postItem_username__2r1i_"
+            },
+            "Base_URL": "https://mmb.moneycontrol.com/",
+            "Stocks":{
+                "Navin Fluorine": "forum-topics/stocks/navin-fluorine-105135.html",
+                "Gujarat Fluorochemicals": "https://mmb.moneycontrol.com/forum-topics/stocks/gfl-511040.html",
+                "Pidilite Industries": "forum-topics/stocks/pidilite-ind-9021.html",
+                "Balaji Amines": "forum-topics/stocks/balaji-amines-90252.html",
+                "Alkyl Amines": "forum-topics/stocks/alkyl-amines-5541.html",
+                "Fine Organics": "forum-topics/stocks/fine-organic-industries-510787.html",
+                "Chemplast Sanmar": "forum-topics/stocks/chemplast-511716.html",
+                "Atul Ltd": "forum-topics/stocks/atul-47501.html"
+            }
+        }
+    },
+    "Hotels":{
+        "Booking.com": {
+            "Class" :{
+                "element_selector" : "b87c397a13 a17eaf5728 e19e5a7d46",
+                "ts_selector": "f6e3a11b0d a19a26a18c e9e7508e96 e95943ce9b",
+                "review_title": "b87c397a13 a17eaf5728 e19e5a7d46",
+                "review_text": "ea9fc823c1",
+                "score": "bc946a29db",
+                "review_author": "b08850ce41 f546354b44",
+                "country": "d838fb5f41 aea5eccb71",
+                "room_type_selector": "c5eb966161",
+                "next_page_selector": "Next page"
+            },
+            "Base_URL": "https://www.booking.com/",
+            "Hotels": {
+                "ITC Kohenur": "hotel/in/itc-kohenur-a-luxury-collection-hyderabad.html#tab-reviews",
+                "Taj Krishna": "hotel/in/taj-krishna.html#tab-reviews",
+                "Park Hyatt Hyderabad": "hotel/in/park-hyatt-hyderabad.html#tab-reviews",
+                "Le Meridien Hyderabad": "hotel/in/le-meridien-hyderabad.html#tab-reviews",
+                "Trident Hyderabad": "hotel/in/trident-hyderabad.html#tab-reviews"
+            }
+        },
+        "Agoda": {
+            "Class": {
+                "element_selector" : "Review-comment",
+                "nested_div_selector": "Review-comment-reviewer",
+                "ts_selector": "Review-statusBar-left",
+                "review_title": "review-title",
+                "review_text": "Review-comment-body",
+                "score": "Review-comment-leftScore",
+                "review_author": "reviewer-name",
+                "next_page_selector": "Next reviews page"
+            },
+            "Base_URL": "https://www.agoda.com/",
+            "Hotels": {
+                "ITC Kohenur": "itc-kohenur-a-luxury-collection-hotel-hyderabad/hotel/hyderabad-in.html?countryId=35&finalPriceView=1&isShowMobileAppPrice=false&cid=1844104&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2025-07-14&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&los=1&searchrequestid=fc71c9be-d832-4577-93ec-20c18405316b&ds=YeMbbwKLV7gcoKJY"
+            }
+        }
+    },
+    "Modules":{
+        "required_modules" : ["pandas", "selenium", "beautifulsoup4", "bs4", "logging", "nltk", "googletrans==3.1.0a0"],
+        "modules_to_upgrade": ["certifi"]
+    }
+}
+
